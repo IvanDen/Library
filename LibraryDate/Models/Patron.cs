@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LibraryDate.Models
 {
@@ -15,6 +13,7 @@ namespace LibraryDate.Models
         public string TelephoneNumber { get; set; }
         #endregion
 
-        //public virtual LibraryCard LibraryCard { get; set; }
+        public virtual LibraryCard LibraryCard { get; set; }
+        public virtual LibraryBranch HomeLibraryBranch { get; set; }
     }
 }
