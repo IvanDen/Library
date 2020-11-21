@@ -98,7 +98,7 @@ namespace LibraryDate.Migrations
 
                     b.HasIndex("LibraryCardId");
 
-                    b.ToTable("CheckoutHistorys");
+                    b.ToTable("CheckoutHistories");
                 });
 
             modelBuilder.Entity("LibraryDate.Models.Hold", b =>
@@ -201,7 +201,7 @@ namespace LibraryDate.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LibraryBranchs");
+                    b.ToTable("LibraryBranches");
                 });
 
             modelBuilder.Entity("LibraryDate.Models.LibraryCard", b =>
@@ -219,7 +219,7 @@ namespace LibraryDate.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LibraryCard");
+                    b.ToTable("LibraryCards");
                 });
 
             modelBuilder.Entity("LibraryDate.Models.Patron", b =>
@@ -266,7 +266,7 @@ namespace LibraryDate.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Descriptionet")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -10,7 +10,8 @@ namespace LibraryDate.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [Display(Name = "Branch Name")]
+        [StringLength(30, ErrorMessage = "Limit branch name to 30 characters.")]
         public string Name { get; set; }
 
         [Required]
