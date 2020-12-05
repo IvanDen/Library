@@ -30,7 +30,8 @@ namespace LibraryServices
 
         public LibraryAsset GetById(int id)
         {
-            return GetAll().FirstOrDefault(asset => asset.Id == id);
+            return GetAll()
+                .FirstOrDefault(asset => asset.Id == id);
         }
 
         public LibraryBranch GetCurrentLocation(int id)
